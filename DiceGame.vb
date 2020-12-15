@@ -25,3 +25,28 @@ Public Class DiceGame
                 Exit Do
             End If
             MsgBox("That number is incorrect! ")
+            Dim reponses As New Random()
+            Dim options As Integer
+            options = reponses.Next(6)
+
+            If options = 0 Then
+                MsgBox("Almost!!")
+            End If
+            If options = 1 Then
+                MsgBox("I feel like it is the next one.")
+            End If
+            If options = 2 Then
+                MsgBox("You got this")
+            End If
+
+            If options = 3 Then
+                MsgBox("C'mon")
+            End If
+
+            If options = 4 Then
+                MsgBox("We are very warm!!")
+            End If
+
+            If options = 5 Then
+                MsgBox("Next one for sure!")
+            End If
