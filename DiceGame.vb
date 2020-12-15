@@ -50,3 +50,10 @@ Public Class DiceGame
             If options = 5 Then
                 MsgBox("Next one for sure!")
             End If
+        Loop Until guess = randomNumber
+
+        ' One more trial that you took is added to the total
+        counter += 1
+        MsgBox("Congratulations! That is the right number! And it only took " & counter & " tries.")
+    End Sub
+End Class
